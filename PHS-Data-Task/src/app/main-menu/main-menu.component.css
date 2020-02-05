@@ -1,0 +1,51 @@
+.main {
+  background-color: #f4f3ef;
+}
+
+.sidenav {
+  background-color: #1e242f;
+  height: 100vh;
+}
+
+a:hover {
+  box-shadow: inset 0 0 0 1px #14aace;
+}
+
+.nav-link {
+  color: #14aace;
+}
+
+img {
+  background-color: #f4f3ef;
+  width: auto;
+  padding: 0px 10px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background-color: #14aace;
+  color: #0d0636;
+}
+
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+  .sidenav {
+    height: auto;
+  }
+  .card {
+    height: auto;
+    width: auto;
+  }
+  .vh-100 {
+    height: 100% !important;
+  }
+  .sticky-top {
+    position: auto;
+  }
+}
+
+.row.content {
+  height: 550px;
+}

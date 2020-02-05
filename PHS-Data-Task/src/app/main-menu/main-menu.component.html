@@ -1,0 +1,68 @@
+<div class="main container-fluid mh-100">
+  <div class="row">
+    <div class="col-sm-2 sidenav shadow-sm text-center sticky-top">
+      <div class="mb-3 mt-2">
+        <img src="../../assets/PHS_Logo.png" width="210" height="100" />
+      </div>
+      <div class="border-bottom mb-3"></div>
+      <div class="mb-3 text-justify">
+        <ul class="nav flex-column nav-pills">
+          <li class="nav-item mb-1">
+            <a
+              class="nav-link"
+              [routerLinkActive]="['active']"
+              [routerLink]="['dashboard']"
+            >
+              <div class="d-inline"><i class="fas fa-chart-bar fa-lg"></i></div>
+              <div class="d-inline col-2 ml-2">Dashboard</div>
+            </a>
+          </li>
+          <li class="nav-item mb-1">
+            <a
+              class="nav-link"
+              [routerLinkActive]="['active']"
+              [routerLink]="['button-summary']"
+            >
+              <div class="d-inline"><i class="fas fa-chart-bar fa-lg"></i></div>
+              <div class="d-inline col-2 ml-2">Button Summary</div>
+            </a>
+          </li>
+          <li class="nav-item mb-1">
+            <a
+              class="nav-link"
+              [routerLinkActive]="['active']"
+              [routerLink]="['area-summary']"
+            >
+              <div class="d-inline"><i class="fas fa-chart-bar fa-lg"></i></div>
+              <div class="d-inline col-2 ml-2">Area Summary</div>
+            </a>
+          </li>
+          <li class="nav-item mb-1">
+            <a
+              class="nav-link"
+              [routerLinkActive]="['active']"
+              [routerLink]="['room-summary']"
+            >
+              <div class="d-inline"><i class="fas fa-chart-bar fa-lg"></i></div>
+              <div class="d-inline col-2 ml-2">Room Summary</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLinkActive]="['active']"
+              [routerLink]="['site-summary']"
+            >
+              <div class="d-inline"><i class="fas fa-chart-bar fa-lg"></i></div>
+              <div class="d-inline col-2 ml-2">Site Summary</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-10 mt-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
