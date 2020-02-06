@@ -6,6 +6,7 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutes } from "./app.routes";
+import { ChartsModule } from 'ng2-charts';
 
 //Views
 import { MainMenuComponent } from "./main-menu/main-menu.component";
@@ -32,9 +33,10 @@ import { DataHandlerService } from "src/services/data-handler.service";
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    ChartsModule,
     RouterModule.forRoot(AppRoutes)
   ],
   providers: [DataHandlerService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

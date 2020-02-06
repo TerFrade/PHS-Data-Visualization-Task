@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataHandlerService } from "src/services/data-handler.service";
 
 @Component({
   selector: 'app-button-summary',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonSummaryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataHanlder: DataHandlerService) { }
 
   ngOnInit() {
+    console.log(this.dataHanlder.buttonSummary)
   }
 
 }
