@@ -15,6 +15,9 @@ import { RoomSummaryComponent } from "./views/room-summary/room-summary.componen
 import { AreaSummaryComponent } from "./views/area-summary/area-summary.component";
 import { SiteSummaryComponent } from "./views/site-summary/site-summary.component";
 
+//Services
+import { DataHandlerService } from "src/services/data-handler.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,7 @@ import { SiteSummaryComponent } from "./views/site-summary/site-summary.componen
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes)
   ],
-  providers: [],
+  providers: [DataHandlerService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

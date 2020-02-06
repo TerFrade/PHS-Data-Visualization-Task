@@ -1,1 +1,93 @@
-<p>dashboard works!</p>
+<div class="row text-center mb-4">
+  <div class="col-sm-3">
+    <div class="card border-0 rounded-lg shadow-sm mb-4 mb-sm-0">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <i class="fas fa-4x fa-phone-alt text-primary"></i>
+          </div>
+          <div class="col-8">
+            <div>
+              <h4 class="justify-content-end">Call Amount</h4>
+              <p>{{ totalCallAmount }} Calls</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-0 rounded-lg shadow-sm mb-4 mb-sm-0">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <i class="fas fa-4x fa-clock text-warning"></i>
+          </div>
+          <div class="col-8">
+            <div>
+              <h4 class="justify-content-end">Avg. Response Time</h4>
+              <p>{{ averageCancelTime }} Minutes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-0 rounded-lg shadow-sm mb-4 mb-sm-0">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <i class="fas fa-4x fa-fingerprint text-danger"></i>
+          </div>
+          <div class="col-8">
+            <div>
+              <h4 class="justify-content-end">Unique Buttons</h4>
+              <p>{{totalUniqueButtons}} Pressed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-0 rounded-lg shadow-sm">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-4"><i class="fas fa-4x fa-person-booth text-success"></i></div>
+          <div class="col-8">
+            <div>
+              <h4 class="justify-content-end">Unique Rooms</h4>
+              <p>{{totalUniqueRooms}} Calls Came From</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container-fluid">
+  <div class="row justify-content-center">
+    <div
+      class="card border-0 rounded-lg shadow-sm"
+      style="display: block; width: 85.5rem; height: 40rem;"
+    >
+      <app-jason-loading-data
+        *ngIf="this.list == undefined"
+      ></app-jason-loading-data>
+      <ng-container *ngIf="this.chartData.length != 0">
+        <canvas
+          baseChart
+          [datasets]="chartData"
+          [labels]="chartLabels"
+          [options]="chartOptions"
+          [plugins]="chartPlugins"
+          [legend]="chartLegend"
+          [chartType]="chartType"
+        >
+        </canvas>
+      </ng-container>
+    </div>
+  </div>
+</div> -->

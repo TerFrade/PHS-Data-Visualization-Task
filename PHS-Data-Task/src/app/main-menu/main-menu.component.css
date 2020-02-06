@@ -16,6 +16,7 @@ a:hover {
 }
 
 img {
+  border-radius:  5px;
   background-color: #f4f3ef;
   width: auto;
   padding: 0px 10px;
