@@ -1,3 +1,7 @@
 h4 {
     font-size: 1.4rem;
 }
+
+.hiddenRow {
+    padding: 0 !important;
+}
